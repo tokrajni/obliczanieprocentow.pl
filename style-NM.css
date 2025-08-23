@@ -1,0 +1,543 @@
+.active-lang,
+.button:hover,
+.nav button:hover {
+    background-color: #1976d21f
+}
+
+input,
+input:disabled {
+    background-color: #fff
+}
+
+body,
+nav ul {
+    padding: 0;
+    margin: 0
+}
+
+.bold,
+.fractions,
+.icon {
+    font-weight: 700
+}
+
+#scrollToTheTopButton,
+.main-header img {
+    height: 40px;
+    width: 40px
+}
+
+body {
+    font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+h1 {
+    text-align: center
+}
+
+.language {
+    display: flex;
+    flex-direction: row
+}
+
+.example {
+    color: red;
+    margin-left: 20px
+}
+
+.fractions {
+    margin: 10px
+}
+
+.img-wrapper {
+    display: inline-block;
+    width: 150px
+}
+
+.language-box a {
+    display: block;
+    font-size: 10px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9
+}
+
+.button,
+.nav button,
+input,
+input:disabled {
+    border: 1px solid #000
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    background-color: #d3d3d3;
+    padding: 10px 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 18px
+}
+
+.close-button,
+.info-expanded {
+    border-style: solid;
+    border-width: 1px
+}
+
+.icon {
+    width: 50px;
+    margin-right: 50px
+}
+
+.copy-button,
+.nav,
+.wrapper-one {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.button-text {
+    text-align: left
+}
+
+.button:hover {
+    color: #1762ad
+}
+
+.domain-address-one,
+.domain-address-three,
+.main-header a {
+    color: #fff
+}
+
+button,
+input,
+input:disabled {
+    color: #000;
+    font-size: 100%
+}
+
+.domain-address-two {
+    color: #d3d3d3
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh
+}
+
+.wrapper-one {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify
+}
+
+.margin-bot {
+    padding-bottom: 150px
+}
+
+input:disabled {
+    opacity: 1
+}
+
+.main-header-wrapper {
+    background-color: #1976d2;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.left {
+    display: flex;
+    padding: 5px
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24px
+}
+
+.nav,
+nav li {
+    display: inline-block
+}
+
+nav {
+    align-self: center
+}
+
+nav ul {
+    list-style: none;
+    text-align: center
+}
+
+nav a {
+    display: block
+}
+
+.tip {
+    color: #1976d2
+}
+
+.nav-wrapper {
+    text-align: center;
+    margin-top: 40px;
+    max-width: 90%
+}
+
+.copy-button,
+.nav button {
+    text-align: left;
+    cursor: pointer
+}
+
+.nav {
+    width: auto
+}
+
+.nav button {
+    display: block;
+    width: 100%;
+    padding: 10px 50px;
+    margin-bottom: 5px;
+    font-size: 16px
+}
+
+.footer li,
+.footer ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none
+}
+
+.links a,
+.links li {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.footer .links a,
+.links a {
+    text-decoration: underline
+}
+
+.footer {
+    color: #fff;
+    background-color: #1976d2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between
+}
+
+.footer .links a {
+    margin-left: 200px;
+    color: #1976d21f
+}
+
+.copy-button {
+    padding-left: 25px;
+    width: 35px;
+    height: 100%;
+    background-image: url("img/copy.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px
+}
+
+.info-colapsed,
+.info-expanded {
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat
+}
+
+.calculator-wrapper .round-button:active,
+.copy-button:active {
+    opacity: .5
+}
+
+.completed {
+    background-image: url("img/completed.png");
+    color: transparent
+}
+
+.show-scrollTop {
+    opacity: 1 !important;
+    transition: .2s ease-in-out
+}
+
+#scrollToTheTopButton {
+    bottom: 15px;
+    right: 15px;
+    transition: .2s ease-in-out;
+    opacity: 0;
+    position: fixed;
+    text-indent: -999px;
+    cursor: pointer;
+    background-image: url("img/button.png");
+    background-repeat: no-repeat
+}
+
+.show {
+    display: flex
+}
+
+.no-show {
+    display: none
+}
+
+.info-colapsed {
+    width: 21px;
+    height: 21px;
+    margin-left: 20px;
+    background-image: url("img/info.png");
+    cursor: pointer
+}
+
+.info-expanded {
+    cursor: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 50px;
+    background-color: #1976d21f;
+    background-position-x: 10px
+}
+
+.close-button {
+    width: 50px;
+    height: 5px;
+    font-size: 15px;
+    line-height: 4px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 100px
+}
+
+.close-button:hover {
+    opacity: .8;
+    cursor: pointer
+}
+
+.calculator-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.calculator-wrapper {
+    background-color: #1976d21f;
+    padding: 15px;
+    margin-top: 30px
+}
+
+.active {
+    background-color: #1976d236
+}
+
+.calculator-wrapper .wrapper-one,
+.calculator-wrapper .wrapper-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.calculator-wrapper .wrapper-three {
+    display: flex;
+    flex-wrap: no-wrap
+}
+
+.calculator-wrapper span {
+    display: block;
+    width: 70px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-top: 10px
+}
+
+.calculator-wrapper .span-one {
+    text-align: right;
+    width: 40px
+}
+
+.calculator-wrapper .span-three {
+    text-align: right
+}
+
+.calculator-wrapper .span-five,
+.calculator-wrapper .span-seven,
+.calculator-wrapper .span-six {
+    width: 5px
+}
+
+.calculator-wrapper input {
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    height: 20px;
+    width: 170px
+}
+
+.calculator-wrapper button {
+    display: block;
+    min-width: 100px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 10px 0;
+    height: 44px
+}
+
+.calculator-wrapper .calculator-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.buttons-wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    opacity: .5
+}
+
+.round-button {
+    width: 70px;
+    height: 25px;
+    background-image: url("img/round.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+.calculator-wrapper .copy-button2 {
+    height: 25px
+}
+
+@media only screen and (max-width:1200px) {
+
+    body,
+    html {
+        overflow-x: hidden
+    }
+
+    body {
+        position: relative
+    }
+
+    .tip {
+        color: #1976d2;
+        display: none
+    }
+
+    h1 {
+        font-size: 22px
+    }
+
+    .icon {
+        text-align: center;
+        width: 32px;
+        margin-right: 10px;
+        font-weight: 700
+    }
+
+    .button {
+        display: flex;
+        width: 100%;
+        border: 1px solid #000;
+        background-color: #d3d3d3;
+        padding: 10px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        font-size: 18px
+    }
+
+    .calculator-wrapper .calculator-wrapper {
+        padding: 30px
+    }
+
+    .calculator-wrapper .wrapper-one {
+        max-width: 500px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .calculator-wrapper .wrapper-three {
+        margin-bottom: 10px
+    }
+
+    .calculator-wrapper .span-one {
+        width: 70px;
+        text-align: right
+    }
+
+    .calculator-wrapper .span-two {
+        text-align: left;
+        width: 70px
+    }
+
+    .calculator-wrapper .span-three {
+        text-align: right
+    }
+
+    .calculator-wrapper .span-four {
+        text-align: left
+    }
+
+    .calculator-wrapper .span-five,
+    .calculator-wrapper .span-seven,
+    .calculator-wrapper .span-six {
+        width: 70px
+    }
+
+    .calculator-wrapper .span-eight {
+        width: 70px;
+        margin-right: 0
+    }
+
+    .calculator-wrapper button {
+        display: block;
+        min-width: 196px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px 0;
+        height: 44px
+    }
+
+    .calculator-wrapper input {
+        display: block;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 10px;
+        height: 20px;
+        width: 170px
+    }
+}
