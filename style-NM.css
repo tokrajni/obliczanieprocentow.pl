@@ -441,6 +441,16 @@ nav a {
     height: 25px
 }
 
+.apps-buttons-desktop {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
 @media only screen and (max-width:1200px) {
 
     body,
