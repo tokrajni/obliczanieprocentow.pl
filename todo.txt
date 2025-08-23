@@ -1,0 +1,5 @@
+// Importuj bibliotekę Decimal.js
+const Decimal = require('decimal.js');
+
+// Oblicz 0.21% z 0.3 z wykorzystaniem Decimal.js
+const result = new Decimal(0.3).times(0.0021);

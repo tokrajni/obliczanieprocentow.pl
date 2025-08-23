@@ -1,0 +1,93 @@
+[
+    {
+        "calculatorName":"app-procent-z-liczby",
+        "testCases" : [
+            {
+                "inputA":"50",
+                "inputB":"200",
+                "expectedResult":"100"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-roznica-procentowa",
+        "testCases" : [
+            {
+                "inputA":"100",
+                "inputB":"200",
+                "expectedResult":"+100"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-dodaj-procent-do-liczby",
+        "testCases" : [
+            {
+                "inputA":"150",
+                "inputB":"10",
+                "expectedResult":"165"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-odejmij-procent",
+        "testCases" : [
+            {
+                "inputA":"500",
+                "inputB":"20",
+                "expectedResult":"400"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-jakim-procentem",
+        "testCases" : [
+            {
+                "inputA":"50",
+                "inputB":"250",
+                "expectedResult":"20"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-cena-po-rabacie",
+        "testCases" : [
+            {
+                "inputA":"100",
+                "inputB":"20",
+                "expectedResult":"80"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-liczba-przed-odjeciem-procetu",
+        "testCases" : [
+            {
+                "inputA":"100",
+                "inputB":"20",
+                "expectedResult":"125"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-cena-po-podwyzce",
+        "testCases" : [
+            {
+                "inputA":"100",
+                "inputB":"23",
+                "expectedResult":"123"
+            }
+        ]
+    },
+    {
+        "calculatorName":"app-liczba-przed-dodaniem-procentu",
+        "testCases" : [
+            {
+                "inputA":"123",
+                "inputB":"23",
+                "expectedResult":"100"
+            }
+        ]
+    }
+    
+]
