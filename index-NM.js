@@ -173,5 +173,45 @@ function markActiveCalculator(e) {
 }
 window.addEventListener("load", (e) => {
   focusFirstInput("app-procent-z-liczby", !0);
-}),
-  window.addEventListener("scroll", handleScroolBtnVissability);
+});
+window.addEventListener("scroll", handleScroolBtnVissability);
+
+// app popup start
+const minVisits = 3;
+const hideForDays = 7;
+
+function isMobile() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function showPopup() {
+  document.getElementById("app-popup").style.display = "flex";
+}
+
+// Obsługa wizyt i popupu
+(function () {
+  if (!isMobile()) return; 
+
+  const now = Date.now();
+  const lastShown = localStorage.getItem("popupLastShown");
+  const visits = parseInt(localStorage.getItem("popupVisits") || "0") + 1;
+  localStorage.setItem("popupVisits", visits);
+
+  if (lastShown && now - parseInt(lastShown) < hideForDays * 24 * 60 * 60 * 1000) {
+    return; // popup niedostępny jeszcze
+  }
+
+  if (visits >= minVisits) {
+    showPopup();
+    localStorage.setItem("popupLastShown", now.toString());
+    localStorage.setItem("popupVisits", "0");
+  }
+})();
+
+// Zamknięcie popupu
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".popup-close").addEventListener("click", () => {
+    document.getElementById("app-popup").style.display = "none";
+  });
+});
+// app popup end
