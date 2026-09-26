@@ -1,0 +1,69 @@
+name: Deploy to MyDevil
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      SSH_KEY: ${{ secrets.DEVIL_SSH_KEY }}
+      SSH_USER: "tomekrr84"
+
+    steps:
+      - name: Get the IP address of the GitHub runner
+        run: |
+          # Print the public IP of the GitHub Actions runner
+          echo "GitHub Actions Runner Public IP:"
+          curl -s https://api.ipify.org
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Setup SSH
+        run: |
+          echo "SSH Username: $SSH_USER"
+          echo "SSH Key (first 20 chars): ${SSH_KEY:0:20}..."
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_github_actions
+          chmod 600 ~/.ssh/id_github_actions
+
+      - name: Deploy to MyDevil
+        uses: appleboy/ssh-action@master
+        with:
+          host: s42.mydevil.net
+          username: tomekrr84
+          key: |
+            $SSH_KEY
+          script: |
+            DOMAIN_NAME=obliczanieprocentow.pl
+            pwd
+            cd ~/domains/$DOMAIN_NAME/public_html
+            pwd
+            echo $PATH
+            export PATH=$PATH:/home/tomekrr84/.npm-global/bin
+            echo $PATH
+            html-minifier --version
+            cleancss --version
+            terser --version
+            
+            if [ ! -d .git ]; then
+              echo "Not a git repository. Cloning..."
+              rm -rf ./* .[^.]* || true
+              git clone git@github.com:tokrajni/$DOMAIN_NAME.git .
+            else
+              echo "Git repository found. Pulling latest changes..."
+              git reset --hard
+              git pull
+            fi
+
+            chmod +x auto-deploy.sh
+            ./auto-deploy.sh
